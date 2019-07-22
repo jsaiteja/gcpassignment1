@@ -1,0 +1,9 @@
+1. create a gce vm instance using the command
+   gcloud compute instances create gcp-sai-3 --tags http-server --metadata-from-file startup-script=Install_apche.sh
+2. To get the details of the instance use the command
+gcloud compute instances describe gcp-sai-3
+
+3. Create an instance template 
+gcloud compute instance-templates create sai-ins-template1 --source-instance=gcp-sai-3 --source-instance-zone=us-east1-b
+4. Create an auto scaling group using the command
+gcloud compute instance-groups managed create sai-ins-group1 --zone=us-east1-c --template=prashanthautoscaletemplate1 --size=4
