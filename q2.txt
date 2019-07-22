@@ -1,0 +1,29 @@
+1. In order to create a new configuration the following command has to be used.
+
+             gcloud config configurations create <configuration-name>
+          Eg:gcloud config configurations create sai-config-1
+Then a new configuration will be created and activated. 
+It will be displayed on the secreen that it is created and activated.
+
+2. If not activated, use the following command
+
+         gcloud config configurations activate sai-config-1
+
+3. In order to set the email use the command
+
+         gcloud config set account 'sai-config-1'
+
+   Then it will take you through authentication of email in order to set it
+
+4. Then it will prompt to set the project name. 
+
+5. The following command can be used to know the all details of existing configuration
+
+              gcloud config list -all
+
+6. In order to get the details of all existing configurations the following command has to be used.
+
+              gcloud config configurations list
+7. To switch accounts 
+               gcloud auth login
+login to the another account, enter verification code etc.,

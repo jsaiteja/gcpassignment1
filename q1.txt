@@ -1,0 +1,19 @@
+1.Install the gcloud sdk for windows.
+2.open the sdk and initialize the sdk using the command 
+              gcloud init
+3.In order to authenticate an email link will be opened.
+  enter the email address and copy the authentication code to sdk and log in.
+4.In order to view the installed and uninstalled components use the command
+
+                   gcloud components list
+
+5.in order to install the components use the commands
+
+                   gcloud components install kubectl 
+                   gcloud components install bq
+                   gcloud components install alpha
+                   gcloud components install beta
+                   gcloud components install alpha
+
+6.Use the command gcloud --version to check the list of all installed components
+                   

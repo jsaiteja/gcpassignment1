@@ -1,0 +1,27 @@
+1. Go to storage in the gcp console.
+2. Create a bucket.give a unique name (sai-bucket-1) 
+   and upload some files in it to do some operations.
+
+3. list the files in the bucket,
+   
+    gsutil ls gs://sai-bucket-1
+
+4. In order to do DELETE operation us the command
+
+   gsutil rm gs://sai-bucket-1/awsq6.txt
+
+5. In order to MOVE a file into a folder use the command,
+
+   gsutil mv gs://sai-bucket-1/awsq7.txt gs://sai-bucket-1/sai-folder-2/awsq7.txt 
+
+6. To UPLOAD a file to the bucket, use the command
+
+   gsutil cp Desktop/kitten.png gs://sai-bucket-1/uploadedimage.png  
+
+7. To DOWNLOAD a file from the bucket, use the command
+
+   gsutil cp  gs://sai-bucket-1/uploadedimage.png Desktop/downloadedimage.png
+
+    
+    
+

@@ -1,0 +1,14 @@
+1. Create a GCE VM instance and 
+2. In order to launch the apache2 server use the following command
+
+    sudo apt-get install apache2 -y
+
+2.  Create an alerting policy
+    
+    Conditions: Process health chekcs tab
+                Specify the time (in minutes) and the no. og instances beyond which 
+                alert notification has to be sent.
+
+3.  add an email id for the notification channel.
+    If the specified condition fails more than the specified uptime then the alert notification will be sent to the email id.
+

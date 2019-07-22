@@ -1,0 +1,10 @@
+1. Create a custom service account 
+2. Add a role to it.
+   In order to allow it to access objects to read only purpose,
+   add storage object viewer role to the service account.
+3. Now go to the GCE and create a VM instance with the custom service account created earlier.
+4. Launch the instance using SSH.
+5. Perform different operations on the objects and see whether only view access obtained or not.
+6. If a delete operation ar any other operation other than view is performed , it should show access denied.
+
+

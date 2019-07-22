@@ -1,0 +1,15 @@
+1. go to vpc networks  in gcp console
+2. Enter the name In the subnets option select automatic.
+3. create the vpc
+4. Add firewall rules to the vpc and access through SSH only.
+5. For SSH, select port 22 in the tcp.
+6. Individually add the separate firewall rules for each source ip and allow it.
+7. The source ip ranges are:
+    59.152.53.168/30
+    59.152.53.104/29
+    59.152.53.200/29
+    59.152.53.120/29
+    59.152.52.104/29
+    59.152.52.152/29
+    59.152.52.172/30
+    202.122.21.69/32

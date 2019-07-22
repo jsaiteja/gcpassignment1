@@ -1,0 +1,7 @@
+1. gcloud services list
+
+   The above command is used to list out all the services that are available
+
+2. gcloud services list --available
+
+   The above command is used to list all services that are enabled.
